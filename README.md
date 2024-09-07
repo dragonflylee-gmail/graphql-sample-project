@@ -3,6 +3,7 @@
 Prerequisites:
 Node.js and npm installed.
 Basic understanding of JavaScript, Node.js, and GraphQL.
+
 Steps to Create a Sample GraphQL Project
 1. Initialize the Node.js Project
 bash
