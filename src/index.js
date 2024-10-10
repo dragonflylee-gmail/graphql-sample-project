@@ -1,5 +1,4 @@
 // src/index.js
-// src/index.js
 
 const { ApolloServer } = require('apollo-server-express');
 const express = require('express');

@@ -8,15 +8,19 @@ const resolvers = {
     },
     Mutation: {
         post: async (parent, args, context) => {
-            const newLink = await context.prisma.link.create({
+            return await context.prisma.link.create({
                 data: {
                     description: args.description,
                     url: args.url,
                 },
             });
-            return newLink;
+        },
+        deleteLink: async (_, {id}, context) => {
+            return await context.prisma.link.delete({
+                where: {id: Number(id)},
+            });
         },
     },
 };
 
-module.exports = { resolvers };
+module.exports = {resolvers};

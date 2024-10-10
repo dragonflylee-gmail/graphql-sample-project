@@ -15,6 +15,7 @@ const typeDefs = gql`
 
   type Mutation {
     post(description: String!, url: String!): Link!
+    deleteLink(id: ID!): Link!
   }
 `;
 
